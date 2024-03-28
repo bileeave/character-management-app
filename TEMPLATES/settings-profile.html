@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+  <link rel="stylesheet" href="./bootstrap.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/4.0.0/css/jasny-bootstrap.min.css">
+</head>
+<body>
+  <main class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <h5 class="card-header">Settings</h5>
+            <div class="list-group list-group-flush">
+              <a href="profile.html" class="list-group-item list-group-item-action active">Profile</span></a>
+              <a href="settings-change-password.html" class="list-group-item list-group-item-action">Password</span></a>
+              <a href="./settings-import-export.html" class="list-group-item list-group-item-action">Import & Export</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="card">
+            <div class="card-header d-flex">
+              <h4 class="card-title ms-2 mt-2">Edit profile</h4>
+            </div>
+            <div class="card-body">
+              <div class="row justify-content-center">
+                <div class="text-center mt-3">
+                  <div class="fileinput fileinput-new" data-provides="fileinput">
+                    <div class="fileinput-new img-thumbnail" style="width: 200px; height: 200px;">
+                      <img src="https://via.placeholder.com/200x200" class="rounded" alt="User's profile image">
+                    </div>
+                    <div class="fileinput-preview fileinput-exists img-thumbnail" style="max-width: 200px; max-height: 200px;"></div>
+                    <div class="mt-2">
+                      <span class="btn btn-sm btn-outline-secondary btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+                      <a href="#" class="btn btn-sm btn-outline-danger fileinput-exists" data-dismiss="fileinput">Remove</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <form action="" method="POST">
+                    <div class="mt-2">
+                      <label for="inputName" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="inputName" aria-describedby="User's name">
+                    </div>
+                    <div class="mt-2">
+                      <label for="inputEmail" class="form-label">Email</label>
+                      <input type="text" class="form-control" id="inputEmail" aria-describedby="User's email">
+                    </div>
+                    <div class="mt-4 text-center">
+                      <button type="submit" class="btn btn-primary">Update profile</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer text-muted">
+              <div class="row">
+                <div class="col-md-auto ms-auto">
+                  <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#deleteAccountModal">Delete account</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="modal fade" id="deleteAccountModal" aria-labelledby="Delete account warning" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Are you sure?</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="modal-body pb-1">
+          <p>Please be sure. This will delete your account and everything in it.</p>
+        </div>
+        <div class="modal-footer">
+          <form action="">
+            <button type="button" class="btn btn-danger">Confirm account deletion</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/4.0.0/js/jasny-bootstrap.min.js"></script>
+</body>
+</html>
